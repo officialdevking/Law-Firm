@@ -13,14 +13,13 @@ header{
  display: flex;
  align-items: center;
  justify-content: space-between;
- padding: 0 30px;
+ width: 100%;
 }
 ul{
  display: flex;
 }
 li{
  list-style-type: none;
- margin: auto 30px;
 }
 ul li a:hover{
  border-bottom: 2px solid black;
@@ -31,6 +30,7 @@ ul li a:hover{
 a{
  text-decoration: none;
  color:  #000000;
+ margin: auto 30px;
 }
 .logo1{
  width: 80%;
@@ -41,15 +41,15 @@ main{
  background-position: center center;
  background-size: cover;
  width: 100%;
- height: 842px;
+ height: 100vh;
  display: flex;
 }
 .left{
  background: #15587EDE;
  width: 65%;
- height: 842px;
+ height: 100vh;
  box-sizing: border-box;
- padding: 15rem 5rem;
+ padding: 7rem 5rem;
  font-size: 30px;
  color: white;
 }
@@ -84,12 +84,12 @@ section{
  margin: 100px 0;
 }
 .sub-head{
- font-size: 25px;
+ font-size: 20px;
  text-align: center;
  margin: 50px 0;
 }
 .line{
- width: 10%;
+ width: 100px;
  border: 3px solid black;
  margin: auto;
 }
@@ -103,7 +103,8 @@ section{
 }
 .write-up p{
  margin-top: 35px;
- font-size: 45px;
+ font-size: 30px;
+ width: 70%;
 }
 .words{
  display: flex;
@@ -124,8 +125,9 @@ section{
 }
 .services p{
  color: white;
- font-size: 50px;
+ font-size: 40px;
  width: 60%;
+ margin: 20px 0;
 }
 .boxes{
  display: flex;
@@ -146,12 +148,12 @@ section{
  background-color: #6F5C4587;
 }
 .sub-head-1{
- font-size: 25px;
+ font-size: 20px;
  margin: 50px 40px;
  margin-top: 80px;
 }
 .line-1{
- width: 30%;
+ width: 250px;
  border: 3px solid black;
  margin: 0 130px;
 }
@@ -292,7 +294,7 @@ footer{
 /* mediaquery */
 @media (max-width:1199.98px){
  .left{
-  padding: 10rem 5rem;
+  padding: 5rem 5rem;
   font-size: 25px;
  }
  .left p{
@@ -403,6 +405,7 @@ footer{
  .bars{
   display: block !important;
   font-size: 20px !important;
+  margin: 0 20px;
  }
  .left{
   width: 100%;
@@ -453,10 +456,16 @@ footer{
  header{
   padding: 0px;
  }
+ ul{
+  margin: auto 0;
+ }
  .left{
   text-align: center;
   font-size: 20px;
   padding: 10rem 1rem;
+ }
+ .logo1{
+  width: 60%;
  }
  .img{
   width: 90%;
@@ -470,7 +479,8 @@ footer{
   margin: auto;
  }
  .mate, .mate-1, .mate-2{
-  width: 300px;
+  width: 80%;
+  height: 80vh;
  }
  .books-2 h2{
   font-size: 40px;
@@ -490,5 +500,18 @@ footer{
  }
  .social{
   margin-top: 30px;
+ }
+ .sub-head-1{
+  text-align: center;
+  font-size: 16px;
+ }
+ .line-1{
+  width: 200px;
+  margin: 0 auto;
+ }
+ .services p{
+  font-size: 20px;
+  text-align: center;
+  margin: 20px auto;
  }
 }
